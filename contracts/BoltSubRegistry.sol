@@ -6,6 +6,11 @@ import "@openzeppelin/contracts/access/extensions/AccessControlEnumerable.sol";
 import "./interfaces/ISubRegistry.sol";
 import "./interfaces/IBoltRegistry.sol";
 
+
+/**
+ * @title BoltSubRegistry
+ * @dev A prototype of sub-registry wrapper contract for the Bolt registry as default sub-registry.
+ */
 contract BoltSubRegistry is AccessControlEnumerable, ISubRegistry {
 
     // Role for admin of the sub registry

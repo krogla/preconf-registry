@@ -6,6 +6,11 @@ import "@openzeppelin/contracts/access/extensions/AccessControlEnumerable.sol";
 import "./interfaces/ISubRegistry.sol";
 import "./interfaces/ILidoNOR.sol";
 
+/**
+ * @title LidoNORSubRegistry
+ * @dev A prototype of sub-registry wrapper contract for the Lido NO registry.
+ */
+
 contract LidoNORSubRegistry is AccessControlEnumerable, ISubRegistry {
     // Role for admin of the sub registry
     bytes32 public constant REGISTRY_ADMIN_ROLE = keccak256("REGISTRY_ADMIN_ROLE");
